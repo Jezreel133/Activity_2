@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+        <style>
+            /* I D */
+          /*  #txtUsername {
+                color: red;
+                font-size: large;               
+            } */
+
+            /* C L A S S */
+            .redText {
+                color: aquamarine;
+                font-size: large;
+                background-color: #bebebe;
+            }
+
+            #buttonLogin {
+                color: red;
+            }
+            #buttonLogin:hover {
+                cursor: pointer;
+                background-color: #bebebe;
+                font-size: large;
+            }
+
+            /* Lahat ng element <INPUT> */
+                /* input {
+                    margin: 1rem;
+                } */
+        </style>
 </head>
 <body>
     <div style="text-align: center;">
         <h1>Login</h1>
-        <input type="text" placeholder="Username">
-        <input type="text" placeholder="Password">
+        <input type="text" id="txtUsername" placeholder="Username" class="redText" >
+        <input type="text" placeholder="Password" class="redText">
         <div style="margin-top: 1rem;">
             <button id="buttonLogin" onclick="alert('Logging in...')">Login</button>
         </div>
